@@ -1,0 +1,12 @@
+{
+  "name": "react-app",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "tsc -b && vite build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
