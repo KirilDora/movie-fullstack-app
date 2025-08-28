@@ -1,0 +1,34 @@
+# Dependency directories for both client and server
+node_modules/
+**/node_modules/
+
+# Production build output
+/client/build/
+/server/dist/
+/dist/
+/output/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.log
+
+# IDE and OS specific files
+.idea/
+.vscode/
+.DS_Store
+*.swp
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+.env.production.local
+.env.development.local
+
+# Jest cache
+/coverage/
+
+# Misc
+.cache/
