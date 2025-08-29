@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "migrate": "tsx src/db/migrate.ts",
-    "start": "tsx src/index.ts",
+    "migrate": "ts-node src/db/migrate.ts",
+    "start": "ts-node src/index.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
