@@ -11,7 +11,7 @@ import type { UserState } from "../users/userSlice";
 
 export const moviesApi = createApi({
   reducerPath: "moviesApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000/api/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_URL }),
   tagTypes: ["Movies"],
   endpoints: (builder) => ({
     searchOmdbMovies: builder.query<Movie[], { searchQuery: string }>({
