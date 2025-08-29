@@ -2,11 +2,11 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server/src/index.js",
   "scripts": {
     "migrate": "ts-node src/db/migrate.ts",
     "start": "ts-node src/index.ts",
-    "build": "tsc",
+    "build": "tsc -b && cp src/db/migrations.sql dist/server/src/db/migrations.sql",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
